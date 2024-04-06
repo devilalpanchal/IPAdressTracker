@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box ;
+}
+.ipTrackerName{
+  background-image: url(./images/pattern-bg-desktop.png);
+  height: 210px;
+  text-align: center;
+padding-top: 15px;
+color: whitesmoke;  
+z-index: 0;
+}
+
+#input{
+  margin-left: -10px;
+  width: 40%;
+  padding: 15px;
+  border-radius: 15px 0px 0px 15px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+}
+
+#btn{
+  border-radius:0px 15px 15px 0px ;
+  position: fixed;
+  background-color: #3f3f3f;
+  padding: 18.5px;
+  border: none;
+  margin-top: 20px;
+  margin-right: 800px;
+z-index: 100;
+}
+.iframe{
+  height: 63vh;
+  width: 100%;
+}
+#showAddress{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap:70px;
+  height: 60%;
+  background-color: #ffffff;
+  width: 80%;
+  color: black;
+  border-radius: 15px;
+  margin-left: 140px;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-size: 15px;
+  color: brown;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width:990px){
+
+  #showAddress{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+    height: 110%;
+    background-color: #ffffff;
+    width: 80%;
+    color: black;
+    border-radius: 15px;
+    margin-left: 40px;
+  }
+#line{
+  display: none;
+}
+.iframe{
+  height: 64vh;
+  width: 100%;
+}
+}

@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | IP Address Tracker</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ipTrackerName">
+      <h1 class="CurrentLocation">IP Address Tracker</h1>
+      <input
+        type="text"
+        id="input"
+        placeholder="Search for any IP Address or domain"
+      />
+      <button id="btn"> <img src="./images/icon-arrow.svg" alt=""></button>
 
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div id="showAddress">
+    <div class="ipadress1">
+      <hr id="line">
+      <p>IP ADDRESS</p>
+      <h3 id="ipadress"></h3>
+      <hr id="line">
+    </div>
+    <hr>
+    <div class="location1">
+      <hr id="line">
+      <p>LOCATION</p>
+      <h3 id="location">
+        <span class="country"></span>
+          <span class="region"></span>
+      </h3>
+      <hr id="line">
+    </div>
+    <hr>
+    <div class="timezone1">
+      <hr id="line">
+      <p>TIMEZONE</p>
+      <h3 id="timezone"></h3>
+      <hr id="line">
+    </div>
+    <hr>
+    <div class="isp1">
+      <hr id="line">
+      <p>ISP</p>
+      <h3 id="isp"></h3>
+      <hr id="line">
+    </div>
   </div>
-</body>
+    </div>
+
+    <div class="main">
+      <iframe
+      class="iframe"
+       src="https://maps.google.com/maps?q=23.30944, 77.38696&z=15&output=embed" 
+    ></iframe>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/devilalpanchal">Devid Panchal </a>.
+    </div>
+
+    <!-- to add functionality -->
+    <script src="script.js"></script>
+  </body>
 </html>
