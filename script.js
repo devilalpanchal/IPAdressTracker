@@ -1,7 +1,5 @@
 const btn = document.getElementById('btn')
-console.log(btn);
 const input = document.getElementById('input')
-console.log(input);
 const ipadress = document.getElementById('ipadress')
 const country = document.querySelector('.country')
 const region = document.querySelector('.region')
